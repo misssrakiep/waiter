@@ -78,18 +78,20 @@ module.exports = function(models) {
       }
     });
   };
+
+
   /////////////////////////////////////////////////////////////////////////////
 
+  var list = {
+    Monday: [],
+    Tuesday: [],
+    Wednesday: [],
+    Thursday: [],
+    Friday: [],
+    Saturday: [],
+    Sunday: []
+  };
   const days = function(req, res, next) {
-    var list = {
-      Monday: [],
-      Tuesday: [],
-      Wednesday: [],
-      Thursday: [],
-      Friday: [],
-      Saturday: [],
-      Sunday: []
-    };
     var color = "";
     var msg = "";
 
@@ -240,7 +242,28 @@ module.exports = function(models) {
       }
     })
   };
-
+  /////////////////////////////////////////////////////////////////////////////
+  //functon to reset the waiters days to 0 again
+    var reset = function(req, res, next) {
+      var list2 = {
+        Monday: [],
+        Tuesday: [],
+        Wednesday: [],
+        Thursday: [],
+        Friday: [],
+        Saturday: [],
+        Sunday: []
+      };
+      res.render('days' , {
+        Monday: list2.Monday,
+        Tuesday: list2.Tuesday,
+        Wednesday: list2.Wednesday,
+        Thursday: list2.Thursday,
+        Friday: list2.Friday,
+        Saturday: list2.Saturday,
+        Sunday: list2.Sunday
+      })
+    }
 
 
 
@@ -249,6 +272,7 @@ module.exports = function(models) {
     home,
     index,
     updateOrAdd,
-    days
+    days,
+    reset
   };
 }

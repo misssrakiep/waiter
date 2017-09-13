@@ -34,6 +34,7 @@ app.get('/', function(req, res) {
 app.get('/waiter', waiter.home);
 app.get('/waiter/:username', waiter.index);
 app.post('/waiter/:username', waiter.updateOrAdd);
+app.get('/reset', waiter.reset);
 app.get('/days', waiter.days);
 app.post('/days', waiter.days);
 
