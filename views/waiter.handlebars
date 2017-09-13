@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/waiter.css">
+<center>
+{{#if username}}
+  <h2>Welcome, {{username}}!</h2>
+  {{else}}
+  <h2>Welcome!</h2>
+  <h5>(Please enter your name in the URL)</h5>
+{{/if}}
+</center>
+<!-- add show and hide function for form if username is there and if days have been selected -->
+<center>
+  <form class="" action="/waiter/{{username}}" method="post">
+  <h4>Please select available days below:</h4>
+</center>
+  <div class="days">
+  <input class="click" type="checkbox" name="days" value="Monday">Monday<br>
+  <input class="click" type="checkbox" name="days" value="Tuesday">Tuesday<br>
+  <input class="click" type="checkbox" name="days" value="Wednesday">Wednesday<br>
+  <input class="click" type="checkbox" name="days" value="Thursday">Thursday<br>
+  <input class="click" type="checkbox" name="days" value="Friday">Friday<br>
+  <input class="click" type="checkbox" name="days" value="Saturday">Saturday<br>
+  <input class="click" type="checkbox" name="days" value="Sunday">Sunday<br>
+</div>
+<br>
+<center>
+  <input type="submit" name="" value="Submit my schedule"/>
+</form>
+<!-- show days which are currently in the current waiters shifts -->
+
+<ul>
+  {{#if days}}
+  {{#each days}}
+    <li style="border: 1px solid grey; width: 25%">{{this}}</li>
+    {{/each}}
+  {{else}}
+    <h5>No days have been selected for you yet, {{username}}</h5>
+  {{/if}}
+</ul>
+
+</center>

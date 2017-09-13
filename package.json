@@ -1,0 +1,27 @@
+{
+  "name": "waiters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shameera Rakiep",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "handlebars-helpers": "^0.9.8",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.7",
+    "node-static": "^0.7.9",
+    "uuid": "^3.1.0"
+  }
+}

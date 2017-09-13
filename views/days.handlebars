@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="/waiter.css">
+<center>
+  <h2>Waiter schedule:</h2>
+  <div class="days" style="width: 50%; background-color: {{color}}">
+    <h3>Monday</h3>
+    <ul>
+      {{#Monday}}
+        <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+      {{/Monday}}
+      <h4>
+        {{msg}}
+      </h4>
+    </ul>
+  </div>
+  <br>
+  <div class="days" style="width: 50%; background-color: {{color1}}">
+    <h3>Tuesday</h3>
+    <ul>
+      {{#Tuesday}}
+      <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+    </ul>
+    {{/Tuesday}}
+    <h4>
+      {{msg1}}
+    </h4>
+  </div>
+  <br>
+  <div class="days" style="width: 50%; background-color: {{color2}}">
+    <h3>Wednesday</h3>
+    <ul>
+      {{#Wednesday}}
+      <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+      {{/Wednesday}}
+      <h4>
+        {{msg2}}
+      </h4>
+    </ul>
+  </div>
+  <br>
+  <div class="days" style="width: 50%; background-color: {{color3}}">
+    <h3>Thursday</h3>
+    <ul>
+      {{#Thursday}}
+      <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+      {{/Thursday}}
+      <h4>
+        {{msg3}}
+      </h4>
+    </ul>
+  </div>
+  <br>
+  <div class="days" style="width: 50%; background-color: {{color4}}">
+    <h3>Friday</h3>
+    <ul>
+      {{#Friday}}
+      <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+      {{/Friday}}
+      <h4>
+        {{msg4}}
+      </h4>
+    </ul>
+  </div>
+  <br>
+  <div class="days" style="width: 50%; background-color: {{color5}}">
+    <h3>Saturday</h3>
+    <ul>
+      {{#Saturday}}
+      <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+      {{/Saturday}}
+      <h4>
+        {{msg5}}
+      </h4>
+    </ul>
+  </div>
+  <br>
+  <div class="days" style="width: 50%; background-color: {{color6}}">
+    <h3>Sunday</h3>
+    <ul>
+      {{#Sunday}}
+      <li style="background-color: white; width: 50%">{{this}}</li>
+        {{else}}
+          <h5>Waiters needed</h5>
+      {{/Sunday}}
+      <h4>
+        {{msg6}}
+      </h4>
+    </ul>
+  </div>
+</center>
