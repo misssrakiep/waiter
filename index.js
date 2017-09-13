@@ -7,7 +7,7 @@ const Waiter = require('./waiter');
 const Models = require('./models');
 const mongoose = require('mongoose');
 const helpers = require('handlebars-helpers');
-const models = Models('mongodb://localhost:27017/waiter');
+const models = Models(process.env.MONGO_DB_URL ||'mongodb://localhost:27017/waiter');
 const waiter = Waiter(models);
 const app = express();
 
@@ -39,8 +39,8 @@ app.post('/days', waiter.days);
 
 
 
-const port = 3030;
+const port = process.env.PORT || 3030;
 app.listen(port, function() {
   console.log('Running on port ' + port);
 });
-app.set('port', port);
+app.set('port', process.env.PORT || port);
