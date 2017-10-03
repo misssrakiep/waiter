@@ -61,7 +61,7 @@ Nodemon is a utility that will monitor for any changes in your source and automa
 
 ## -Getting started on the application:
 
-To get started on editing and contributing to the Waiter Web Application you will need to clone the application repository from [GITHUB](https://github.com/misssrakiep/waiter)
+To get started on editing and contributing to the Waiter Web Application you will need to fork the application repository from [GITHUB](https://github.com/misssrakiep/waiter) into your own github
 
 ### -Cloning the repository:
 
